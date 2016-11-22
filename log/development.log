@@ -1688,3 +1688,31 @@ Processing by MoviesController#index as HTML
   [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'NC-17', 'R')[0m
   Rendered movies/index.html.haml within layouts/application (5.5ms)
 Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 128.194.142.241 at 2016-11-21 23:11:54 +0000
+
+
+Started GET "/movies" for 128.194.142.241 at 2016-11-21 23:11:54 +0000
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'NC-17', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (21.3ms)
+Completed 200 OK in 321ms (Views: 284.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for 128.194.142.241 at 2016-11-22 15:54:04 +0000
+
+
+Started GET "/movies" for 128.194.142.241 at 2016-11-22 15:54:05 +0000
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'NC-17', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (20.3ms)
+Completed 200 OK in 272ms (Views: 235.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/movies/1" for 128.194.142.241 at 2016-11-22 15:54:08 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered movies/show.html.haml within layouts/application (3.3ms)
+Completed 200 OK in 19ms (Views: 12.7ms | ActiveRecord: 0.2ms)
